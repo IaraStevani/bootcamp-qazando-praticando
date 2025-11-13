@@ -19,5 +19,8 @@
   "homepage": "https://github.com/IaraStevani/bootcamp-qazando-praticando#readme",
   "dependencies": {
     "cypress": "^14.5.1"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^10.1.0"
   }
 }
