@@ -1,11 +1,11 @@
 # Nome da pipeline
-name: Run Basic Testes
+name: CI Run Basic Testes
 
 # Em que momento será executada a pipeline
 on: 
-  pull_request:
-    branches:
-      - main
+  push:
+    branches: [main]
+    
 jobs:
   # o que será feito nessa pipeline
   # só teremos um job: rodar os testes
