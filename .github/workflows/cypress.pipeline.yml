@@ -4,7 +4,8 @@ name: CI Run Basic Testes
 # Em que momento será executada a pipeline
 on: 
   push:
-    branches: [main]
+    branches:
+      - main
     
 jobs:
   # o que será feito nessa pipeline
@@ -34,7 +35,7 @@ jobs:
 
       # upload do relatório gerado com o mocha
       - name: Upload relatório
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: Relatório mocha
           path: cypress/reports/html
